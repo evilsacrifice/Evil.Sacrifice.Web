@@ -1,0 +1,15 @@
+﻿@model EvilSacrifice.Models.Blogs.BlogPageModel
+@using System.IO
+<div>
+    <span >@Model.PagePath</span>
+    @if (File.Exists(Model.PagePath))
+    {
+        <div>
+            @Html.Raw(File.ReadAllText(Model.PagePath));
+        </div>
+    }
+    else
+    {
+        <span>блог не найден!</span>
+    }
+</div>
