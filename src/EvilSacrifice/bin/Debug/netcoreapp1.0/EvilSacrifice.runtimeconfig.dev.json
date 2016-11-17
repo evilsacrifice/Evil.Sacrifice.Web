@@ -1,7 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\evilk\\.nuget\\packages"
+      "/root/.nuget/packages"
     ]
   }
 }

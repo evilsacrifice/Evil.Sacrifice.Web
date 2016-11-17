@@ -26,7 +26,7 @@ namespace EvilSacrifice.Controllers
         public IActionResult Read(string pageName)
         {
             var webRootPath = _hostingEnvironment.WebRootPath;
-            var pagePath = System.IO.Path.Combine(webRootPath, $"html\\{pageName}.htm");
+            var pagePath = System.IO.Path.Combine(webRootPath, $"html//{pageName}.htm");
             var model = new BlogPageModel() { PagePath = pagePath };
             return View(model);
         }
